@@ -1,0 +1,74 @@
+<?php
+/**
+ * Cmsmart Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0).
+ * It is available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you are unable to obtain it through the world-wide-web, please send
+ * an email to support@cmsmart.net so we can send you a copy immediately.
+ *
+ * @category   Cmsmart
+ * @package    Cmsmart_Testimonial
+ * @copyright  Copyright (C) 2012 www.cmsmart.net All Rights Reserved. 
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+
+/**
+ * side box template of testimonials
+ *
+ * @category   Cmsmart
+ * @package    Cmsmart_Testimonial
+ * @author     VF 
+ */
+
+/**
+ * @var $this Cmsmart_Testimonial_Block_Testimonial
+ */
+?>
+<?php $testimonials = $this->getTestimonials(); ?>
+<?php $i = 1; $lasttestimonial = $testimonials->count();?>
+<?php if ($testimonials->count() > 0): ?>
+<div class="block testimonials_sidebar">
+	<div class="block-title">
+	<strong><span><?php echo $this->__('Testimonials') ?></span></strong>
+	</div>
+	<div class="block-content">
+		<?php foreach ($testimonials as $testimonial): ?>
+		<?php if($i == $lasttestimonial){?>
+			<div class="tblock">
+			<?php }else{?>
+			<div class="tnone">
+			<?php }?>
+			
+			<div class="testimonial_sidebar_box">
+			<div class="testimonial_sidebar_name"><?php echo $testimonial->getTestimonialName(); ?></div>
+			<?php if ($testimonial->getTestimonialImg()): ?>
+				<div class="testimonial_image"><img alt="<?php echo $testimonial->getTestimonialName(); ?>" src="<?php echo Mage::getBaseUrl('media'). $testimonial->getTestimonialImg() ?>" /></div>
+			<?php endif; ?>
+				<div class="testimonial_sidebar_text">
+				<img src="<?php echo $this->getSkinUrl('images/image-left-1.png') ?>" style="float: left; margin-right:3px;"/>
+				<?php $sdesc = $testimonial->getTestimonialText();
+				$sdesc = trim($sdesc);
+				$limit = 98;
+    			if (strlen($sdesc) > $limit) {
+     			$sdesc = substr($sdesc, 0, strrpos(substr($sdesc, 0, $limit), ' '));
+    			} ?>
+				<?php echo $sdesc."..."; ?>
+               
+				<img src="<?php echo $this->getSkinUrl('images/image-left-2.png') ?>"/>
+				</div>
+				
+				
+			</div>
+			</div>
+			<?php $i++;?>
+		<?php endforeach; ?>
+		<div class="ac">
+		    <a href="<?php echo $this->getUrl('testimonials'); ?>"><?php echo $this->__('Read All Testimonials'); ?></a>
+		</div>
+    </div>
+</div>
+<?php endif;?>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<tabs>
+        <cmsmart translate="label">
+            <label>Cmsmart Extensions</label>
+            <sort_order>150</sort_order>
+        </cmsmart>
+    </tabs>
+    <sections>
+        <video translate="label">
+			<label>Banner and Config Bottom</label>
+			<tab>cmsmart</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>201</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+            <groups>
+                <bannertop translate="label">
+                	<label>Banner Top Page</label>
+                	<frontend_type>text</frontend_type>
+                    <sort_order>3</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                    	<logo translate="label comment">
+						<label>Image Banner Top Page</label>
+						<comment>Allowed file types: jpeg, gif, png. size: 1202px x 147px.</comment>
+						<frontend_type>image</frontend_type>
+						<backend_model>adminhtml/system_config_backend_image</backend_model>
+						
+						<upload_dir config="system/filesystem/media" scope_info="1">wysiwyg</upload_dir>
+						<base_url type="media" scope_info="1">wysiwyg</base_url>
+						<sort_order>1</sort_order>
+						<show_in_default>1</show_in_default>
+						<show_in_website>1</show_in_website>
+						<show_in_store>1</show_in_store>
+						</logo>
+						                    
+            		</fields>
+                </bannertop> 
+                <videobug translate="label">
+                    <label>Bottom</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>5</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+            			
+						<bannerbl translate="label comment">
+						<label>Image Banner Bottom Left</label>
+						<comment>Allowed file types: jpeg, gif, png. size: 545px x 210px.</comment>
+						<frontend_type>image</frontend_type>
+						<backend_model>adminhtml/system_config_backend_image</backend_model>
+						
+						<upload_dir config="system/filesystem/media" scope_info="1">wysiwyg</upload_dir>
+						<base_url type="media" scope_info="1">wysiwyg</base_url>
+						<sort_order>77</sort_order>
+						<show_in_default>1</show_in_default>
+						<show_in_website>1</show_in_website>
+						<show_in_store>1</show_in_store>
+						</bannerbl>
+						<bannerbr translate="label comment">
+						<label>Image Banner Bottom Right</label>
+						<comment>Allowed file types: jpeg, gif, png. size: 545px x 210px.</comment>
+						<frontend_type>image</frontend_type>
+						<backend_model>adminhtml/system_config_backend_image</backend_model>
+						
+						<upload_dir config="system/filesystem/media" scope_info="1">wysiwyg</upload_dir>
+						<base_url type="media" scope_info="1">wysiwyg</base_url>
+						<sort_order>78</sort_order>
+						<show_in_default>1</show_in_default>
+						<show_in_website>1</show_in_website>
+						<show_in_store>1</show_in_store>
+						</bannerbr>
+						<link_shownow translate="label">
+                            <label>Link Button "Show Now"</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>79</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_shownow>
+						
+                        
+            			<title_video translate="label">
+            			<label>Title Block Video</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+            			</title_video>
+            			<link_video translate="label">
+                            <label>Url video</label>
+                            <comment>Url youtube example: Copy "bGEwYq8dlRo" in https://www.youtube.com/watch?v=bGEwYq8dlRo</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>81</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_video>
+                        <title_block_fb translate="label">
+            			<label>Title Block Connect us</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>82</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+            			</title_block_fb>
+            			
+                        <link_fb translate="label">
+                            <label>Url Facebook</label>
+                            <comment>Url Facebook iframe. example: https://www.facebook.com/NetbaseCmsmart</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>83</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_fb>
+                        
+            
+                    </fields>
+                </videobug>
+				
+            </groups>
+        </video>
+    </sections>
+</config>
+

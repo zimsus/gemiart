@@ -1,0 +1,26 @@
+<div class="sample-block" style="border: none; padding: 0px; clear: both; width: 100%;">
+<div class="l-postscript">
+<div class="shop-now-l"><a href="<?php echo Mage::getStoreConfig('video/videobug/link_shownow');?>">show now</a></div>
+<?php if(Mage::getStoreConfig('video/videobug/bannerbl')):?>
+<img class="img-bottom" src="<?php echo Mage::getBaseUrl('media') .'wysiwyg/'. Mage::getStoreConfig('video/videobug/bannerbl'); ?>" alt="" />
+<?php else:?> 
+
+<img class="img-bottom" src="<?php echo $this->getSkinUrl('images/banner-mainbottom-1.jpg', array('_secure'=>false)) ?>" />
+
+<?php endif;?>
+
+</div>
+
+<div class="r-postscript">
+<div class="shop-now-r"><a href="<?php echo Mage::getStoreConfig('video/videobug/link_shownow');?>">show now</a></div>
+<?php if(Mage::getStoreConfig('video/videobug/bannerbr')):?>
+<img class="img-bottom" src="<?php echo Mage::getBaseUrl('media') .'wysiwyg/'. Mage::getStoreConfig('video/videobug/bannerbr'); ?>" alt="" />
+<?php else:?> 
+
+<img class="img-bottom" src="<?php echo $this->getSkinUrl('images/banner-mainbottom-2.jpg', array('_secure'=>false)) ?>" />
+
+<?php endif;?>
+
+
+</div>
+</div>

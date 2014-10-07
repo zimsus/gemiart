@@ -1,0 +1,103 @@
+<?php $height = Mage::helper('ultraslideshow')->getCfg('general/height');?>
+<script>
+		jQuery(function(){
+			
+			jQuery('#camera_wrap_1').camera({
+				fx:'<?php echo Mage::helper('ultraslideshow')->getCfg('general/fx');?>',
+				height:'<?php echo $height;?>',
+				<?php if ( Mage::helper('ultraslideshow')->getCfg('general/timeout')):?>
+				transPeriod:<?php echo Mage::helper('ultraslideshow')->getCfg('general/timeout');?>,
+				<?php endif;?>
+				thumbnails: false
+			});
+
+			
+		});
+</script>
+	
+	<?php
+/**
+ * @var $this Cmsmart_UltraSlideshow_Block_Slideshow
+ */
+?>
+<?php if (Mage::helper('ultraslideshow')->getCfg('general/enabled')): ?>
+<?php
+	$helper = $this->helper('ultraslideshow');
+	
+	//Slideshow top margin
+	$slideshowMargin = '';
+	$marginTop = $helper->getCfg('general/margin_top');
+	
+	if ($marginTop != 0)
+		$slideshowMargin = 'style="margin-top:' . $marginTop . 'px;"';
+?>
+ <div class="fluid_container <?php echo $slideshowMargin; ?>"> 
+<?php
+		$helper = $this->helper('ultraslideshow');
+		
+		//Determin width of the slideshow
+		$slideshowGridClass = 'grid-full';
+		$banners = $this->getBanners();
+		if ($banners)
+			$slideshowGridClass = 'slider-grid12';
+		
+    	//Determine position of the slideshow
+		$bannersPosition = $helper->getCfg('banners/position');
+		($bannersPosition == 'left') ? $slideshowPositionClass = 'right' : $slideshowPositionClass = '';
+
+		//Hide slides (not including banners) on mobile devices? "Yes" is default.
+		$hideSlideshowClass = '';
+		if ($helper->getCfg('general/hide'))
+			$hideSlideshowClass = 'hide-below-768';
+	?>
+
+
+<?php $link1 = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_JS); //echo $link1;?>
+<!-- <script type='text/javascript' src='<?php echo $link1;?>cmsmart/jquery/jquery.min.js'></script> -->
+    <script type='text/javascript' src='<?php echo $link1;?>cmsmart/jquery/jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='<?php echo $link1;?>cmsmart/jquery/jquery.easing.1.3.js'></script> 
+    <script type='text/javascript' src='<?php echo $link1;?>cmsmart/jquery/camera.min.js'></script> 
+    
+       	
+        <div class="camera_wrap camera_azure_skin <?php echo $slideshowGridClass . ' ' . $slideshowPositionClass . ' ' . $hideSlideshowClass; ?>" id="camera_wrap_1">
+       
+            <?php $i = 1; foreach ($this->getImgUrls() as $imgUrl): ?>
+            	<div data-thumb="<?php echo $imgUrl; ?>" data-src="<?php echo $imgUrl; ?>">
+            	<div class="camera_caption fadeFromBottom">
+                    <em>text</em> 
+                </div>
+            </div>
+            	            	
+            <?php endforeach; ?>
+         
+            <?php foreach ($this->getStaticBlockIds() as $bid): ?>
+                <?php if (!empty($bid)): ?>
+            
+                    	<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId($bid)->toHtml(); ?>
+			
+                <?php endif; ?>
+            <?php endforeach; ?>
+            
+        </div><!-- #camera_wrap_1 -->
+    	
+    </div>
+    <?php echo $this->getChildHtml('slideshowConfig'); ?>
+    
+    <?php if ($banners): ?>
+    
+    	<?php //Hide banners on mobile devices? "Yes" is default.
+			$hideBannersClass = 'hide-below-768';
+			if ($helper->getCfg('banners/hide') == false)
+				$hideBannersClass = '';
+		?>
+        
+		<div class="slideshow-banners <?php echo $hideBannersClass; ?>">
+        	<?php echo $banners; ?>
+        </div>
+        
+    <?php endif; ?>
+    
+<?php endif; ?>
+	
+<div style="clear: both;"></div>	
+	

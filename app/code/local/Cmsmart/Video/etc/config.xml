@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Cmsmart_Video>
+			<version>1.0.1</version>
+		</Cmsmart_Video>
+	</modules>
+	<global>
+		
+		<blocks>
+			<video>
+				<class>Cmsmart_Video_Block</class>
+			</video>
+		</blocks>	
+	</global>
+	<frontend>
+		<routers>
+			<video>
+				<use>standard</use>
+				<args>
+					  <module>Cmsmart_Video</module>
+					  <frontName>video</frontName>
+				</args>
+			</video>
+		</routers>
+		<layout>
+			<updates>
+				<video>
+		   		      <file>cmsmart/video.xml</file>
+				</video>
+			</updates>
+       	</layout>		
+	</frontend>
+	
+	<default>
+        <video>
+        	<bannertop>
+        		<logo>default/banner-listing.jpg</logo>
+        	</bannertop>
+            <videobug>            	
+            	<bannerbl>default/banner-mainbottom-1.jpg</bannerbl>
+            	<bannerbr>default/banner-mainbottom-2.jpg</bannerbr>
+            	<link_shownow>#</link_shownow>
+            	<title_video>Video - Clip</title_video>
+                <link_video>bGEwYq8dlRo</link_video>
+				<title_block_fb>Connect Us</title_block_fb>
+				<link_fb>https://www.facebook.com/NetbaseCmsmart</link_fb>
+            </videobug>
+			
+        </video>
+    </default>
+
+</config>

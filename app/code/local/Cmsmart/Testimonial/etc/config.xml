@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Cmsmart_Testimonial>
+            <version>1.1.2</version>
+        </Cmsmart_Testimonial>
+    </modules>
+
+    <global>
+        <models>
+            <cmsmart_testimonial>
+                <class>Cmsmart_Testimonial_Model</class>
+                <resourceModel>cmsmart_testimonial_mysql4</resourceModel>
+            </cmsmart_testimonial>
+            <cmsmart_testimonial_mysql4>
+                <class>Cmsmart_Testimonial_Model_Mysql4</class>
+                <entities>
+                    <testimonial>
+                        <table>cmsmart_testimonial</table>
+                    </testimonial>
+                </entities>
+            </cmsmart_testimonial_mysql4>
+        </models>
+
+        <blocks>
+            <cmsmart_testimonial>
+                <class>Cmsmart_Testimonial_Block</class>
+            </cmsmart_testimonial>
+        </blocks>
+
+        <helpers>
+            <cmsmart_testimonial>
+                <class>Cmsmart_Testimonial_Helper</class>
+            </cmsmart_testimonial>
+        </helpers>
+
+        <resources>
+            <cmsmart_testimonial_setup>
+                <setup>
+                    <module>Cmsmart_Testimonial</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </cmsmart_testimonial_setup>
+            <cmsmart_testimonial_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </cmsmart_testimonial_write>
+            <cmsmart_testimonial_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </cmsmart_testimonial_read>
+        </resources>
+    </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <cmsmart_testimonial after="Mage_Adminhtml">Cmsmart_Testimonial_Adminhtml</cmsmart_testimonial>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <cmsmart_testimonial>
+                    <file>cmsmart_testimonial.xml</file>
+                </cmsmart_testimonial>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Cmsmart_Testimonial>
+                    <files>
+                        <default>Cmsmart_Testimonial.csv</default>
+                    </files>
+                </Cmsmart_Testimonial>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <frontend>
+        <routers>
+            <cmsmart_testimonial>
+                <use>standard</use>
+                <args>
+                    <module>Cmsmart_Testimonial</module>
+                    <frontName>testimonials</frontName>
+                </args>
+            </cmsmart_testimonial>
+        </routers>
+        <layout>
+            <updates>
+                <cmsmart_testimonial>
+                    <file>cmsmart_testimonial.xml</file>
+                </cmsmart_testimonial>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Cmsmart_Testimonial>
+                    <files>
+                        <default>Cmsmart_Testimonial.csv</default>
+                    </files>
+                </Cmsmart_Testimonial>
+            </modules>
+        </translate>
+    </frontend>
+</config>

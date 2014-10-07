@@ -1,0 +1,13 @@
+<root>
+   <pages>
+      <cms_page>
+         <title>Jewelry Home Page </title>
+         <identifier>sample-home-page</identifier>
+         <content><![CDATA[{{block type="jewelry/product_list_featured"  category_id="3" product_count="3" block_name="Featured Products" template="catalog/product/list_featured.phtml"}}
+			{{block type="catalog/product_new" products_count="6"  block_name="New Products in our Store" hide_button="1" template="catalog/product/new.phtml"}}
+			]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_page>
+   </pages>
+</root>

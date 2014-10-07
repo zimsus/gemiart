@@ -1,0 +1,28 @@
+<?php $session = Mage::getSingleton('customer/session', array('name'=>'frontend') );?>
+<?php if ($session->isLoggedIn()): ?>
+    <?php echo "Welcome, <span>" .$session->getCustomer()->getName(); ".</span>" ?>
+<?php else: ?>
+<div class="header-account">
+	<form action="<?php echo $this->getPostActionUrl() ?>" method="post" id="login-form">
+            <div class="content">
+            	<input id="test" type="textbox" style="display:none;" />
+                <input onfocus="if (this.value == 'Username') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Username';}" value="Username" type="text" name="login[username]" id="mini-login" class="input-text" title="<?php echo $this->__('Email Address') ?>" />
+                <input onfocus="if (this.value == 'Password') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Password';}" value="Password" type="password" name="login[password]" id="mini-password" class="input-text" title="<?php echo $this->__('Password') ?>" />
+                
+            </div>
+            <div class="buttons-set">
+                <button type="submit" class="button" title="<?php echo $this->__('Login') ?>" name="send" ><span><span><?php echo $this->__('Login') ?></span></span></button>
+            </div>
+            <p><?php echo $this->getChildHtml('form.additional.info'); ?></p>
+    </form>
+			    
+            <div class="header-register">
+                <button type="button" title="<?php echo $this->__('Create an Account') ?>" class="button" onclick="window.location='<?php echo $this->getCreateAccountUrl() ?>';"><span><span><?php echo $this->__('Register') ?></span></span></button>
+            </div>
+			    <script type="text/javascript">
+    //<![CDATA[
+        var dataForm = new VarienForm('login-form', true);
+    //]]>
+    </script>
+</div>
+<?php endif;?>

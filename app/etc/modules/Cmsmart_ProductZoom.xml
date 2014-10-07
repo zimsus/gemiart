@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * @category	Cmsmart
+ * @package		Cmsmart_ProductZoom
+ * @author		Cmsmart
+ */
+ -->
+<config>
+    <modules>
+        <Cmsmart_ProductZoom>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Cmsmart_ProductZoom>
+    </modules>
+</config>

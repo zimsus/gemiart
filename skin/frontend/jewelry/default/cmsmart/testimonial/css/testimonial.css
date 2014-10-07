@@ -1,0 +1,71 @@
+.testimonials {
+    height: 100%;
+}
+.tnone{display: none;}
+.tblock{background: #D4C6C5; padding:10px 19px;}
+.testimonials .testimonial_l, .testimonials .testimonial_r {
+    clear: both;
+    display: table;
+    height: auto;
+    margin: 25px 20px 25px 0;
+    width: 100%;
+}
+.testimonials .testimonial_l .testimonial_image, .testimonials .testimonial_r .testimonial_image{
+	
+	
+}
+.testimonials .testimonial_l .testimonial_image img, .testimonials .testimonial_r .testimonial_image img{
+	margin-top:10px;
+}
+.testimonial_image { 
+    padding: 15px;
+    background: url("../images/ad.png") no-repeat scroll center center transparent; text-align:center;
+    width: auto;
+    height: auto;
+}
+
+.testimonial_text {
+    background: url("../images/quote.gif") no-repeat scroll 0 0 transparent;
+    
+    float: left;
+    font-size: 13px;
+    padding: 20px 20px 0 55px;
+    width: 71%;
+}
+
+.testimonial_text h2 {
+    color: #43A3AC;
+}
+.nb-testimonial{border-bottom:1px solid #e1e1e1;}
+.nb-testimonial:last-child{border-bottom:none!important;}
+.testimonials_title{font-size: 24px!important;}
+.testimonial_l .testimonial_image, .testimonial_r .testimonial_image{float: left; width: 15%;height: 100%; padding:5px; border: 1px solid #F5F5F5; margin:0px 10px;}
+
+.testimonials_sidebar  .block-content{padding: 0px !important; background:#D4C6C5; }
+.testimonials_sidebar .block-content a {
+    color: #6d4023;    
+    text-align: right;
+    font-size: 13px;
+    line-height: 1.25;
+}
+
+.testimonial_sidebar_text{color: #6d4023; font-size: 15px;}
+.testimonials_sidebar  .testimonial_sidebar_box  {
+    font-size: 11px;
+    line-height: 1.25;
+    color: #1B2D3B;
+}
+
+.testimonial_sidebar_text {
+    text-align: left;
+    padding-top: 9px;
+}
+.ac{float: right; background: url("../images/bullet.png") no-repeat scroll 0 5px transparent;
+padding-left:10px; margin-right:20px; margin-bottom:20px;
+}
+.testimonial_sidebar_name {
+    text-align: center !important;
+    color: #f0e8e7;
+    font-weight: bold;
+    font-size: 16px; margin-bottom:10px;
+}

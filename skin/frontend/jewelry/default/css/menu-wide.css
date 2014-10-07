@@ -1,0 +1,74 @@
+/**
+ * Wide drop-down menu
+ */
+
+/* Only 2nd level (first subcategory)
+-------------------------------------------------------------- */
+#nav ul.level0 {
+	position:absolute;	
+	top:49px;
+	left:0;
+	background-color:#fff;
+	width:612px; 
+	padding:20px 0px 30px 20px;
+	
+}
+/* 2nd level only
+-------------------------------------------------------------- */
+/* 2-level links block: with subcategory title and a list of child categories */
+.itemgrid-6cols .item{width:138px;}
+#nav ul.level0 > li {
+	display:inline-block;
+	float:none;
+	vertical-align:top;
+	margin-right: 8%;
+	with:138px;
+	text-align: center !important;
+	
+}
+#nav ul.level0 > li > a {
+	margin-bottom:10px;
+	padding-bottom:15px;
+	text-align:center;
+	text-transform:uppercase;
+	font:bold 14px Arial,Helvetica,sans-serif;
+	text-transform:uppercase;
+	background:url("../images/jewelry/netbase-group.png") no-repeat scroll center bottom transparent !important;
+	
+}
+/* 2nd level+
+-------------------------------------------------------------- */
+#nav ul li { float:none; }
+#nav ul li a { float:none; }
+
+/* 3rd level+
+-------------------------------------------------------------- */
+#nav ul ul { position:static !important; /*TODO:improve*/ }
+#nav ul ul li {
+	text-align:center;
+	transition:			background-position 150ms ease-out;
+	-moz-transition:	background-position 150ms ease-out;
+	-webkit-transition:	background-position 150ms ease-out;
+	-o-transition:		background-position 150ms ease-out;
+}
+#nav ul ul li:hover { background-position:6px 6px; }
+
+/* 4th level
+-------------------------------------------------------------- */
+#nav ul.level2 { margin:7px 0; padding:0; }
+#nav ul.level2 a { font-size:0.9166em; line-height:1.2727em; /*11px 14px*/ opacity:0.6; }
+#nav li.level2:hover ul.level2 a {
+	opacity:1;
+	transition:			opacity 150ms ease-out;
+	-moz-transition:	opacity 150ms ease-out;
+	-webkit-transition:	opacity 150ms ease-out;
+	-o-transition:		opacity 150ms ease-out;
+}
+
+/* 4rd level+
+-------------------------------------------------------------- */
+#nav ul ul ul li { background:none; padding-left:0; }
+
+/* Drop-down box
+-------------------------------------------------------------- */
+#nav > li ul.level0 { display:none; }

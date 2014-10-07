@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category	Cmsmart
+ * @package		Cmsmart_Jewelry
+ * @author		Cmsmart
+ * @copyright	Copyright (C) 2012 www.cmsmart.net All Rights Reserved.
+ */
+-->
+<config>
+    <modules>
+        <Cmsmart_Jewelry>
+            <version>2.0.0</version>
+        </Cmsmart_Jewelry>
+    </modules>
+    <admin>
+		<routers>
+			<jewelry>
+				<use>admin</use>
+				<args>
+					<module>Cmsmart_Jewelry</module>
+					<frontName>jewelry</frontName>
+				</args>
+			</jewelry>
+		</routers>
+	</admin>
+	
+	<adminhtml> 	
+		
+		<layout>
+			<updates>
+				<jewelry>
+					<file>cmsmart/cmsmart_themesetting.xml</file>
+				</jewelry>
+			</updates>
+		</layout>		
+		
+    </adminhtml>
+	
+    <global>
+        <models>
+            <jewelry>
+                <class>Cmsmart_Jewelry_Model</class>
+            </jewelry>
+        </models>
+        <blocks>
+            <jewelry>
+                <class>Cmsmart_Jewelry_Block</class>
+            </jewelry>
+        </blocks>
+        <helpers>
+            <jewelry>
+                <class>Cmsmart_Jewelry_Helper</class>
+            </jewelry>
+        </helpers>
+    </global>
+	<default>
+		<!-- Main settings -->
+		<jewelry>
+		
+			<cmsmart>
+				<license_skuproduct_jewelry1>MGT1</license_skuproduct_jewelry1>
+			</cmsmart>
+			
+			<mainmenu>
+				<home>1</home>
+				<standard_menu>0</standard_menu>
+				<wide_menu>1</wide_menu>
+				<level2_column_count>6</level2_column_count>
+			</mainmenu>
+			
+			<category_grid>
+				<column_count>2</column_count>
+				<equal_height>1</equal_height>
+				<hover_effect>1</hover_effect>
+				<display_rating>1</display_rating>
+				<display_addtocart>2</display_addtocart>
+				<display_addtolinks>1</display_addtolinks>
+				<addtolinks_simple>1</addtolinks_simple>
+			</category_grid>
+			<category_list>
+				<hover_effect>1</hover_effect>
+				<addtolinks_simple>0</addtolinks_simple>
+			</category_list>
+			<product_page>
+				<image_column>4</image_column>
+				<primary_column>5</primary_column>
+				<secondary_column>3</secondary_column>
+				<replace_related>2</replace_related>
+				<replace_upsell>1</replace_upsell>
+			</product_page>
+			<product_labels>
+				<new>1</new>
+				<sale>1</sale>
+			</product_labels>
+			<footer>
+				<links_column_auto_width>1</links_column_auto_width>
+			</footer>
+			<product_slider>
+				<timeout></timeout>
+				<speed>400</speed>
+				<move_items>0</move_items>
+			</product_slider>
+			<magento_blocks>
+				<top_links>1</top_links>
+				<footer_links>1</footer_links>
+				<footer_newsletter>1</footer_newsletter>
+			</magento_blocks>
+			<sidebar_blocks_home>
+				<compare>0</compare>
+				<compared>0</compared>
+				<viewed>0</viewed>
+				<wishlist>0</wishlist>
+				<poll>0</poll>
+				<tags>0</tags>
+				<paypal>0</paypal>
+				<block_left_top>0</block_left_top>
+				<block_left_bottom>0</block_left_bottom>
+				<block_right_top>0</block_right_top>
+				<block_right_bottom>0</block_right_bottom>
+			</sidebar_blocks_home>
+			<install>
+				<overwrite_blocks>0</overwrite_blocks>
+				<overwrite_pages>0</overwrite_pages>
+			</install>
+			
+		</jewelry>
+		
+	</default>
+</config>

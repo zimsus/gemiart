@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * @category	Cmsmart
+ * @package		Cmsmart_Jewelry
+ * @author		Cmsmart
+ */
+ -->
+<config>
+    <modules>
+        <Cmsmart_Jewelry>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Cmsmart_Jewelry>
+    </modules>
+</config> 

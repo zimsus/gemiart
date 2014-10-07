@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Cmsmart_CustomAttribute>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends></depends>
+        </Cmsmart_CustomAttribute>
+    </modules>
+</config>

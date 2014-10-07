@@ -1,0 +1,227 @@
+/* Grid container */
+.container {
+	margin-left:auto;
+	margin-right:auto;
+	width:96%;
+	max-width:960px;
+}
+.nested-container {
+	width:100%;
+	}
+.the-slideshow-wrapper.nested-container.clearer{margin-left:-1%;}
+
+/* Grid-12 units */
+.grid12-1,
+.grid12-2,
+.grid12-3,
+.grid12-4,
+.grid12-5,
+.grid12-6,
+.grid12-7,
+.grid12-8,
+.grid12-9,
+.grid12-10,
+.grid12-11,
+
+/* Grid-4 units */
+.grid4-1,
+.grid4-2,
+.grid4-3,
+
+/* Grid-2 unit */
+.grid2-1,
+
+/* Alias for full-width units */
+.grid-full,
+/* Special grid units */
+
+.grid-col2-main
+{ 
+	position:relative;
+	display:inline;
+	float:left;
+	margin-left:1%;
+}
+.col-main.grid-full.in-col1{margin-left: 0px !important;}
+.the-slideshow.gen-slider-arrows2.gen-slider-pager1.gen-slider-pager1-pos-bottom-right.grid-full{margin-left:0.5% !important;}  
+.grid-col2-sidebar, .postscript {position:relative;
+	display:inline;
+	float:left;
+	margin-left:0px;
+	}
+/* Grid units widths */
+.grid12-1	{ width:6.33%; }
+.grid12-2	{ width:14.67%; }
+.grid12-3,
+.grid4-1	{ width:24%; }
+.grid12-4	{ width:31.33%; }
+.grid12-5	{ width:37.67%; margin-left:4.5%; }
+
+.grid4-2,
+.grid2-1	{ width:48%; }
+.grid12-7	{ width:56.33%; }
+.grid12-8	{ width:64.67%; }
+.grid12-9,
+.grid4-3	{ width:73%; }
+.grid12-10	{ width:81.33%; }
+.grid12-11	{ width:89.67%; }
+.grid-full	{ width:99.3%; }
+
+/* Special grid units: basic structure of pages with 1 and 2 sidebars
+-------------------------------------------------------------- */
+.grid-col2-sidebar	{ width:23%; }
+.grid-col2-main		{ width:73%; }
+.in-col2 .block_cms_page_top{display:none;}
+.grid-col3-sidebar 		{ width:31.52%; }
+.grid-col3-main			{ width:65.90%; }
+
+/* Utility classes */
+.alpha { margin-left:-12px; }
+.alpha .section-space.std{padding-left:0px !important;}
+.omega { margin-right:0 !important; }
+.section-space.std h6{ font-size:18px; font-family: arial; margin-left:26px;margin-left: 30px; text-transform: uppercase;}
+.alpha .section-space.std h6{margin-left:0px !important;}
+.alpha .section-space.std img{padding-top:6px;}
+.footer-primary-bottom.section.section-space{display:none;}
+.footer-secondary-container.section-container{margin-top:9px;}
+.show-bg .section{margin-top: 27px;}
+.section-space.std ul.bullet{padding-left:31px;}
+.hide-below-1680, .hide-below-1440, .hide-below-1360, .hide-below-1280 { display:none !important; }
+
+.container.stretched { width:96%; padding-left:0; padding-right:0; }
+.container.stretched .grid-full { width:100%; margin-left:0; margin-right:0; }
+
+/* Desktop - design for a width of 1280px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+
+/* 1280px <= width */
+
+@media only screen and (min-width: 1280px)  {
+
+						.container { max-width:1200px; }
+				
+	/* Special grid units */
+	.grid-col2-sidebar 	{ width: 22.41%; }
+	.grid-col2-main		{ width: 75.58%; }
+    .grid-col3-sidebar		{ width:27.01%; }
+	.grid-col3-main			{ width:70.34%; }
+	
+	/* Hide */
+	.hide-below-1280 { display:inherit !important; }
+}
+
+
+
+/* All mobile - design for a width of less than 768px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+
+/* width < 768px */
+@media only screen and (max-width: 767px) {
+	
+	/* Grid units below 768px screen size are 100% wide with no margin - compensate margin with padding */
+	.container { width:94%; padding-left:1%; padding-right:1%; }
+	.nested-container { width:100%; margin-left:auto; }
+	
+	/* Stretch all grid units */
+	.grid12-1,
+	.grid12-2,
+	.grid12-3,
+	.grid12-4,
+	.grid12-5,
+	.grid12-6,
+	.grid12-7,
+	.grid12-8,
+	.grid12-9,
+	.grid12-10,
+	.grid12-11,
+	
+	.grid4-1,
+	.grid4-2,
+	.grid4-3,
+	
+	.grid2-1,
+	.grid-full,
+	
+	.grid-col2-sidebar,
+	.grid-col2-main,
+    .grid-col3-sidebar,
+	.grid-col3-main
+	{
+		width:100%; margin-left:0; margin-right:0;
+	}
+}
+
+
+/* Mobile (Landscape) - design for a width of 480px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+
+/* 480px <= width < 768px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+		.container { max-width:453px; }
+    	
+	/* Hide */
+	.hide-below-960 { display:none !important; }
+	.hide-below-768 { display:none !important; }
+	
+	/* Persistent grid units
+	-------------------------------------------------------------- */
+    	
+        /* Half */
+        .persistent-grid2-1 { width:48%; margin-left:1%; margin-right:1%; }
+        
+        /* One-third + two-thirds */
+        .persistent-grid3-1 { width:31.33%; margin-left:1%; margin-right:1%; }
+        .persistent-grid3-2 { width:64.67%; margin-left:1%; margin-right:1%; }
+        
+        /* One-fourth + two-fourths + three-fourths */
+        .persistent-grid4-1 { width:23%; margin-left:1%; margin-right:1%; }
+        .persistent-grid4-2 { width:48%; margin-left:1%; margin-right:1%; }
+        .persistent-grid4-3 { width:73%; margin-left:1%; margin-right:1%; }
+}
+
+
+/* Mobile (Landscape, iPhone 4 Portrait) - design for a width of 640px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+/* 640px <= width < 768px */
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+
+		.container { max-width:602px; }
+    }
+
+
+/* Mobile (Portrait) - design for a width of 320px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+
+/* 320px <= width < 480px */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+
+		.container { max-width:301px; }
+    	
+	/* Hide */
+	.hide-below-960 { display:none !important; }
+	.hide-below-768 { display:none !important; }
+	.hide-below-480 { display:none !important; }
+}
+
+
+/* Mobile (Portrait) - design for a width of less than 320px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+
+/* width < 320px */
+@media only screen and (max-width: 319px) {
+
+		.container { max-width:226px; }
+    	
+	/* Hide */
+	.hide-below-960 { display:none !important; }
+	.hide-below-768 { display:none !important; }
+	.hide-below-480 { display:none !important; }
+	.hide-below-320 { display:none !important; }
+}

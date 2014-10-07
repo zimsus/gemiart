@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <cms_index_index>
+		<reference name="preface">
+			<block type="catalog/product_list_promotion" name="product_promotion"  is_random="0"  template="catalog/product/poromotion.phtml"/>
+		</reference>
+	</cms_index_index>
+</layout>

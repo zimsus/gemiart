@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Cmsmart_Video>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Cmsmart_Video>
+    </modules>
+</config>

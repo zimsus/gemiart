@@ -1,0 +1,1102 @@
+/* Desktop, laptop - design for a width of 1280px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+
+/* 1280px <= width */
+
+@media only screen and (min-width: 1280px)  {
+	
+	/* Header
+	-------------------------------------------------------------- */
+	.header .logo { max-width:350px; }
+    
+    /* Cart
+	-------------------------------------------------------------- */
+    .cart-table .product-image { max-width:89px; }
+	/* Mini cart */
+	.after-mini-cart { clear:none; }
+		
+	/* Item grid: number of columns
+	-------------------------------------------------------------- */
+	.category-products .sticker-wrapper.top-right{right: -9px; top:-253px;} 
+	.category-products .sticker-wrapper.top-left{left: -3px; top:-253px;}
+	/* Item grid: 2 columns */
+	.itemgrid-2cols{ margin-top:31px;}
+	.itemgrid-2cols .item { width:27.59%; clear:none !important;  border:1px solid #e1e1e1; 
+	margin:15px 33px 10px 0px; box-shadow:0 0 8px #EBEBEB; padding:6px 2px 0px 2px !important;}
+	.itemgrid-2cols .item h2.product-name, .itemgrid-2cols .item .no-rating,
+	.itemgrid-2cols .item .ratings
+	{margin-left: 5px;}
+	.itemgrid-2cols .item p.s-content{margin-left: 5px; line-height: 20px; }
+	.itemgrid-2cols .item .ratings .amount{display: none;}
+	.itemgrid-2cols .item .box-limage{background:url("../../images/jewelry/bg_product_032.jpg") no-repeat scroll 0 0 transparent; 
+	width:247px; height: 223px; 
+	padding-top:24px; text-align: center;
+	margin-left: 3px;}
+	.itemgrid-2cols .item .box-limage:hover{background:url("../../images/jewelry/netbase-bg-hover-lastest.png") no-repeat scroll 0 0 transparent;}
+	.itemgrid-2cols .list-item1{position: relative;}
+	.itemgrid-2cols .list-item1 .actions button >span {margin-right:-3px; margin-bottom:-3px; background:url("../../images/jewelry/bg_addcart.jpg") no-repeat scroll center center transparent;  height:39px; width:44px; cursor: pointer;}
+	.itemgrid-2cols .list-item1 .actions .btn-cart{margin-right:0px;}
+	.itemgrid-2cols .list-item1 .actions .btn-cart span{padding:0px;}
+	.itemgrid-2cols .item:nth-child(3n+1) { clear:left !important; }
+	ul.itemgrid-2cols{}
+	.itemgrid-2cols .item a img{width:167px; height:167px; margin-top:10px;}
+	/* Item grid: 3 columns */
+	.itemgrid-3cols .item { width:23%; clear:none !important; }
+	.itemgrid-3cols .item:nth-child(4n+1) { clear:left !important; }
+	
+	/* Item grid: 4 columns */
+	.itemgrid-4cols .item { width:18%; clear:none !important; }
+	.itemgrid-4cols .item:nth-child(5n+1) { clear:left !important; }
+	
+	/* Item grid: 5 columns */
+	.itemgrid-5cols .item { width:14.667%; clear:none !important; }
+	.itemgrid-5cols .item:nth-child(6n+1) { clear:left !important; }
+	
+	/* Item grid: 6 columns */
+	.itemgrid-6cols .item {  }
+	.itemgrid-6cols .item:nth-child(7n+1) { clear:left !important; }
+	
+	/* Item grid: 7 columns */
+	.itemgrid-7cols .item { width:10.5%; clear:none !important; }
+	.itemgrid-7cols .item:nth-child(8n+1) { clear:left !important; }
+	
+	/* xxx
+	-------------------------------------------------------------- */
+	
+	.in-col1 .itemslider-x .slides > li { 
+	margin-right:20px; width:261px !important; 
+	border:1px solid #EBEBEB; 
+	position: relative;
+	box-shadow:1px 1px 8px #EBEBEB;}
+	.in-col1 .itemslider-x .slides > li:hover{height:368px !important;background:none repeat scroll 0 0 #FFFFFF !important;}
+	.in-col1 .itemslider-x .slides > li:hover .nx-hover{display:block !important;
+	background:none repeat scroll 0 0 #FFFFFF !important;top:8px; position: absolute;}
+	.in-col1 .itemslider-x { max-width:1176px; height:408px; } 
+	.in-col1 .itemslider-x .slides > li:hover .actions{display:none;}
+	.in-col1 .itemslider-x .slides > li .img-promotion{
+	height:244px; width:259px; 
+	background:url(../../images/jewelry/bg_product_0321.jpg) no-repeat scroll center center transparent;}
+	.in-col1 .itemslider-x .slides > li .actions button{ background:url(../../images/jewelry/bg_addcart.jpg) no-repeat; float:right;width: 41px; height: 39px; border:none; margin:0px; padding:0px; position: absolute; bottom:0px; right:-2px;}
+	/* Inside main column in 2-col layout */
+	.in-col2 .itemslider-x .slides > li { width:162px !important; }
+	.in-col2 .itemslider-x { max-width:910px; } /*5*/
+	.in-col1 .itemslider-x .slides > li .product-name, .in-col1 .itemslider-x .slides > li .nx-rating,
+	.in-col1 .itemslider-x .slides > li .price-box{margin-left:3px !important;}
+	.in-col1 .itemslider-x .slides > li .ratings .amount{display: none;}
+	.in-col1 .itemslider-x .slides > li .no-rating{float:left; clear: both; }
+	.in-col1 .itemslider-x .slides > li .nx-hover .nbx-products-image{
+	margin-left:0px; height:285px; width:259px; 
+	background:url(../../images/jewelry/bg-hover-featured1.png) no-repeat scroll -1px 0 transparent;}
+	.in-col1 .itemslider-x .slides > li .nx-hover .nbx-title-product{font:16px Arial,Tahoma,Helvetica,sans-serif; text-align: center; margin-top:9px;}
+	.in-col1 .itemslider-x .slides > li .nx-hover .nbx-rating .rating-box .rating{magrin: 0 !important; float: none;}
+	.in-col1 .itemslider-x .slides > li .nx-hover .nbx-rating .no-rating{ magrin: 0 !important; float: none;}
+	.in-col1 .itemslider-x .slides > li .nx-hover .nbx-price-product div.price-box{
+	background:url("../../images/jewelry/bg-price-hover.png") no-repeat scroll center 0 transparent; 
+	bottom:83px; height:130px; position: absolute; right:16px;
+	width:130px;}
+	.nbx-price-product div.price-box span.regular-price span{position: absolute; left:25px; bottom:58px;}
+	.nbx-price-product div.price-box .old-price{display: none;}
+	.nbx-price-product div.price-box .special-price{position: absolute; left:18px; bottom:58px;}
+	.in-col1 .itemslider-x .slides > li .nx-hover .nbx-price-product div.PricesalesPrice span{ text-align: center;}
+	.add-new{border-top:1px solid #e1e1e1; padding-top:8px; margin-right:8px; }
+	.addtocart-area{float:left;}
+	.addtocart-area button{background:url("../../images/jewelry/cart.png") no-repeat scroll left transparent; height: 23px; width:127px; color: #6d4023; }
+	.addtocart-area button span{margin-left:30px !important; background: transparent !important; margin-top:3px !important;}
+	.addtocart-area button:hover span{color:#da9676 !important; margin-top:3px !important;}
+	.addtocart-area button:hover{background:url("../../images/jewelry/cart-over.png") no-repeat scroll left transparent; }
+	.nx-detail{float:right; background:url("../../images/jewelry/nx-detail.png") no-repeat scroll -1px 3px transparent; width:43px; text-align: right; 
+	margin-right: 10px; color: #c37090; margin-top:3px;}
+	/* Inside main column in 3-col layout */
+	.in-col3 .itemslider-x .slides > li { width:140px !important; }
+	.in-col3 .itemslider-x { max-width:640px; } /*4*/
+	
+	/* In up-sell */
+	.box-up-sell.in-col2 .itemslider-x .slides > li { width:155px !important; }
+	.box-up-sell.in-col2 .itemslider-x { max-width:875px; } /*5*/
+	
+	/* Cloud zoom
+	-------------------------------------------------------------- */
+	.itemslider-thumbnails.count-4,
+	.itemslider-thumbnails.count-5,
+	.itemslider-thumbnails.count-multi { max-width:316px; } /*4*/
+	
+	/* Direction navigation */
+	.itemslider-thumbnails.count-4 .direction-nav { display:none; }
+    
+    /* Slideshow caption
+	-------------------------------------------------------------- */
+    .caption .heading { font-size:3.3em; }
+	.caption p { font-size:1.6666em; }
+
+}
+
+
+
+/* Design for a width of 960-1280 px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+
+/* 960px <= width < 1280px */
+@media only screen and (min-width: 960px) and (max-width: 1279px) {
+
+	/* Cart
+	-------------------------------------------------------------- */
+    .cart-table .product-image { max-width:80px; }
+	.recently-view{width:78%;}
+	.recently-view .recently-content ul li{width:17%;}
+	/* xxx
+	-------------------------------------------------------------- */
+	.category-products .sticker-wrapper.top-right{right: -17px; top:-234px;} 
+	.category-products .sticker-wrapper.top-left{left: -11px; top:-234px;}
+	
+	/* Inside main column in 2-col layout */
+	.itemgrid-6cols .item{width: 120px;}
+	#nav ul.level0 > li{margin-right:5%;}
+	#nav ul.level0{width: 478px;}
+	.in-col2 .itemslider-x .slides > li { width:343px !important; }
+	.in-col2 .itemslider-x { max-width:700px; } /*4*/
+	.itemgrid-2cols .item .box-limage{height:223px; background: url("../../images/jewelry/bg_product_032.jpg") no-repeat scroll 0 0 transparent;}
+	.itemgrid-2cols .item .box-limage img{margin-top: 30px;}
+	.itemgrid-2cols .item{width:35% !important;margin-left:40px!important;}
+	.ratings, .no-rating{margin: 12px 0px;}
+	.products-grid .product-name{margin-top:20px !important;}
+	/**/
+	.itemgrid-2cols .list-item1 .actions button >span {margin-right:-14px; margin-bottom:-3px; 
+	background:url("../../images/jewelry/bg_addcart.jpg") no-repeat scroll center center transparent;  
+	height:39px; width:41px; cursor: pointer;}	
+	.lgd > ul >li{padding-bottom: 8px !important;}
+	/* Inside main column in 3-col layout */
+	.in-col3 .itemslider-x .slides > li { width:134px !important; }
+	.in-col3 .itemslider-x { max-width:462px; } /*3*/
+	.gen-slider-arrows1 .direction-nav .prev{left:-7px !important;}
+	.in-col1 .itemslider-x .slides > li { margin-right:30px; width:261px !important; border:1px solid #EBEBEB; padding-right:0px; position: relative;}
+	
+	.in-col1 .itemslider-x { max-width:869px; height:370px; } /*6*/
+	.in-col1 .itemslider-x .slides > li .img-promotion{margin-right:10px;margin-top:5px;
+	height:204px; width:100%; background:url(../../images/jewelry/bg_product_03.jpg) no-repeat scroll center center transparent;}
+	.itemslider-horizontal .slides > li{padding-left:2px !important;}
+	.in-col1 .itemslider-x .slides > li .actions button{ background:url(../../images/jewelry/bg_addcart.jpg) no-repeat; float:right;width: 41px; height: 39px; border:none; margin:0px; padding:0px; position: absolute; bottom:0px; right:-2px;}
+	/* Inside main column in 2-col layout */
+	.in-col2 .itemslider-x .slides > li { width:162px !important; }
+	.in-col2 .itemslider-x { max-width:910px; } /*5*/
+	.in-col1 .itemslider-x .slides > li .product-name, .in-col1 .itemslider-x .slides > li .nx-rating,
+	.in-col1 .itemslider-x .slides > li .price-box
+	{margin-left:12px !important;}
+	.lfp li .nx_product_image:hover{background: url("../../images/jewelry/bg_product_032.jpg") no-repeat scroll 0 0 transparent;}
+	.in-col1 .itemslider-x .slides > li .ratings .amount{display: none;}
+	.in-col1 .itemslider-x .slides > li .no-rating{float:left; clear: both; }
+	
+	.add-new{border-top:1px solid #e1e1e1; padding-top:8px; margin-right:8px; }
+	.addtocart-area{float:left;}
+	.addtocart-area button{background:url("../../images/jewelry/cart.png") no-repeat scroll left transparent; height: 23px; width:127px; color: #6d4023; }
+	.addtocart-area button:hover{background:url("../../images/jewelry/cart-over.png") no-repeat scroll left transparent; }
+	
+	.nx-detail{float:right; background:url("../../images/jewelry/nx-detail.png") no-repeat scroll -1px 3px transparent; width:43px; text-align: right; margin-right: 10px; color: #c37090; margin-top:3px; }
+	.addtocart-area button span{margin-left:30px !important; background: transparent !important; margin-top:3px !important;}
+	.addtocart-area button:hover span{color:#da9676 !important; margin-top:3px !important;}
+	#subscribe-form label span{display:none;}
+	#nav > li{margin-right:5px !important;}
+	#nav > li > a{padding:0 17px !important;}
+	.b-index{margin-right:10px !important; width:311px!important;}
+	.b-index iframe{width: 312px !important; height: 259px !important; }
+	.header-top-search-wrapper{margin:41px 0 0 64px !important; width: 27% !important;}
+	.std .itemslider-wrapper .itemslfp ul li:last-child{display: none;}
+	.b-index .netbase-introtext img{width:92px !important; margin-right:7px !important;}	
+		
+}
+
+
+
+
+
+/* Design for a width of 960-1024 px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+
+/* 960px <= width < 1024px */
+@media only screen and (min-width: 960px) and (max-width: 1023px) {
+	
+	/* xxx
+	-------------------------------------------------------------- */
+	.in-col1 .itemslider-x .slides > li { width:156px !important; }
+	.in-col1 .itemslider-x { max-width:880px; } /*5*/
+	
+	/* Inside main column in 2-col layout */
+	.in-col2 .itemslider-x .slides > li { width:168px !important; } /*MORE*/
+	.in-col2 .itemslider-x { max-width:564px; } /*3*/
+	
+	/**/
+	#subscribe-form label span{display:none;}
+	/* Inside main column in 3-col layout */
+	.in-col3 .itemslider-x .slides > li { width:168px !important; } /*MORE*/
+	.in-col3 .itemslider-x { max-width:376px; } /*3*/
+}
+
+
+
+
+
+/* Mobile, small old desktop - design for a width of less than 960px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+
+/* width < 960px */
+@media only screen and (max-width: 959px) {
+	
+	/* Hide amount. Note: has to be defined after aligning ".amount" center */
+	.toolbar .sorter .amount { display:none !important; }
+	
+	.recently-view{clear: both;}
+    /* Other
+	-------------------------------------------------------------- */
+    #scroll-to-top { display:none !important; }
+    #subscribe-form label span{display:none;}
+}
+
+
+
+/* Tablet (Portrait) - design for a width of 768px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+
+/* 768px <= width < 960px */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+	/* Default Magento classes
+	-------------------------------------------------------------- */
+	.nobr { white-space:normal !important; }
+	.testimonial_l .testimonial_text{float:left; width:43%;}
+	.grid-full, .product-view .box-tabs, .product-view .recently-view{width:99%!important;}
+	.container { max-width:737px; }
+	/* Cart
+	-------------------------------------------------------------- */
+	.camera_wrap{height:251px!important;}
+	.accordion, #mobnav{margin-left: 0!important;}
+	.sticker.sale, .sticker.new, .lang-switcher .inner .label, .currency-switcher .inner .label{display: none;}	
+	.cart-table .product-name { font-size:1em; }
+    .cart-table .product-image { max-width:80px; }
+     #subscribe-form label, .std .itemslider-wrapper .itemslfp ul li:last-child, .sorter .view-mode .list{display:none;}
+    /* Item grid: number of columns
+	-------------------------------------------------------------- */
+	/* Always show 2 columns */
+	.itemgrid-2cols .item,
+	.itemgrid-3cols .item,
+	.itemgrid-4cols .item,
+	.itemgrid-5cols .item,
+	.itemgrid-6cols .item,
+	.itemgrid-7cols .item { width:41%; clear:none !important; }
+	.itemgrid-2cols .list-item1 .actions button >span {margin-right:-14px; margin-bottom:-3px; 
+	background:url("../../images/jewelry/bg_addcart.jpg") no-repeat scroll center center transparent;  
+	height:39px; width:41px; cursor: pointer;}	
+	.lgd > ul >li{padding-bottom: 0px !important;}
+	.std .products-grid1 li .img-product{padding-left:12px !important;}
+	/* Clear every first item in each row (group of n items) */
+	.itemgrid-2cols .item:nth-child(2n+1),
+	.itemgrid-3cols .item:nth-child(2n+1),
+	.itemgrid-4cols .item:nth-child(2n+1),
+	.itemgrid-5cols .item:nth-child(2n+1),
+	.itemgrid-6cols .item:nth-child(2n+1),
+	.itemgrid-7cols .item:nth-child(2n+1) { clear:left !important; }
+	
+	
+	/* xxx
+	-------------------------------------------------------------- */
+	.in-col1 .itemslider-x .slides > li { width:261px !important; border: 1px solid #E1E1E1; margin-right:27px;}
+	.in-col1 .itemslider-x { max-width:592px; } /*4*/
+	.itemslider-horizontal .slides > li{padding-right:0px!important;}
+	
+	/* Inside main column in 2-col layout */
+	.in-col2 .itemslider-x .slides > li { width:155px !important; }
+	.in-col2 .itemslider-x { max-width:525px; } /*3*/
+	
+	/* Cloud zoom
+	-------------------------------------------------------------- */
+	/* Shrink the slider if to many thumbnails */
+	.itemslider-thumbnails.count-3,
+	.itemslider-thumbnails.count-4,
+	.itemslider-thumbnails.count-5,
+	.itemslider-thumbnails.count-multi { max-width:158px !important; } /*2*/
+	
+	/* Direction navigation */
+	.itemslider-thumbnails.count-3 .direction-nav,
+	.itemslider-thumbnails.count-4 .direction-nav,
+	.itemslider-thumbnails.count-5 .direction-nav,
+	.itemslider-thumbnails.count-multi .direction-nav { display:block; }
+	.header-top-search-wrapper{padding:7px 45px 0 9px!important; margin:23px 55px 9px 30px !important; width:45% !important;}
+	
+	.links li a, #mini-cart .block-title, .header .block-compare .block-title{margin-left:4px !important;}
+	
+	.lfp li, .std .products-grid1 li{margin:0px 15px 20px 0px!important;  width: 245px !important;}
+	.lfp li .nx_product_image{width:236px !important; margin:4px 4px 0 !important;}
+	.std .products-grid1 li .img-product{width:236px; margin:2px -1px 0 !important;}
+	.b-index{margin-right:20px!important;}	
+	.header .logo-wrapper{margin-top:19px !important; margin-left:-23px;}
+    .header .logo-wrapper img{width: 90% !important;}
+    .re1 span{font-size: 18px;}
+    .product-secondary-column{float:left !important; width:98%;}
+    .product-secondary-column .inner{padding-left:0px;}
+    .inner .box-sidebar-inner .re2{width:100%;}
+    .inner .box-sidebar-inner .block-related .re2 ol li{float: left; width:36%; margin-right:50px;}
+    .box-tabs{border-top: 1px solid #e1e1e1;}
+    .grid12-5{width:60.67% !important;}
+    .top-links, .top-links ul{float: none !important;}
+    .section-space.std h6{font-size: 13px; font-weight: bold;}
+    .in-col1 .itemslider-x .slides > li .img-promotion{background: url("../../images/jewelry/bg_product_0321.jpg") no-repeat scroll center center transparent; height: 244px; margin-right:7px;}
+    .itemslider .products-grid .price-box, .itemslider .products-grid .product-name{text-align: center;}
+	.itemslider .products-grid .price-box .old-price{float: none!important;}
+	.itemslider .products-grid .price-box .price{margin-left:0px !important;}
+	.itemslider .products-grid .price-box .old-price,
+	.ratings .amount{display: none !important;}
+	.itemslider .products-grid .ratings{margin-left: 90px !important;}
+	
+	
+   	/*accordion*/
+	.accordion {
+	padding:0;
+	margin:7px;
+	list-style-type:none;
+	}
+.accordion ul {
+	float:left;
+	display:block;
+	width:100%;
+	padding:0;
+	margin:0;
+}
+.accordion li {
+	float:left !important;
+	display:block !important;
+	width:100% !important;
+	height:100% !important;
+	padding:0 !important;
+	margin:0 !important;
+	list-style-type:none;
+	cursor:pointer !important;
+	position:relative !important;
+	background: none !important;
+}
+.accordion li a {
+	padding:5px 10px !important;
+	display:block !important;
+	cursor:pointer;
+	text-transform: none !important;	
+}
+.accordion li li a { padding-left:23px !important; }
+.accordion li li li a { padding-left:38px !important; }
+.accordion li li li li a { padding-left:50px !important; }
+.accordion li.parent > a { padding-right:33px !important; }
+.accordion .opener {
+	position:absolute !important;
+	right:0 !important;
+	top:0 !important;
+	display:block !important;
+	width:28px !important;
+	height:28px !important;
+	background: url(../../images/img/opener-small.png) center center no-repeat !important;
+
+}
+.vertnav-top li a{height:21px !important;}
+.accordion li.active > .opener {
+	background: url(../../images/img/opener-small-active.png) center center no-repeat !important;
+}
+#nav > li:hover > a, .vertnav-top li > a:hover{background: transparent !important; border-style:none !important; }
+/*end accordion*/
+	.category-products-grid.itemgrid-6cols .item:hover .btn-cart, .banner-top-page { display:none; }
+	    
+    /* Slideshow caption
+	-------------------------------------------------------------- */
+    .caption .heading { font-size:2.0833em; }
+	.caption p { font-size:1.1666em; }
+	.vertnav-top li a{line-height: 0px !important;}
+	#nav > li:hover > a, .vertnav-top li > a:hover{border-style: none !important;}
+	.accordion li.active{background: none !important;}
+	.accordion li a > span{line-height: 15px !important;}
+}
+
+
+/* All desktop - design for a width of 768px and wider
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+
+/* 768px <= width */
+@media only screen and (min-width: 768px) {
+    
+    /* xxx
+	-------------------------------------------------------------- */
+	.in-sidebar .itemslider-x .slides > li { width:188px !important; }
+	.in-sidebar .itemslider-x { max-width:208px; } /*1*/
+	
+	/* Product page
+	-------------------------------------------------------------- */		
+	/* Itemslider: float left if 1, 2 or 3 items */
+	.box-up-sell .itemslider-q.count-1,
+	.box-up-sell .itemslider-q.count-2 { margin-left:0; margin-right:auto; }
+	
+}
+
+
+/* All mobile - design for a width of less than 768px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+
+/* width < 768px */
+@media only screen and (max-width: 767px) {
+	
+	/* Grid and basic layout
+	-------------------------------------------------------------- */
+		.col-main,
+		.col-left,
+		.col-right
+		{
+			margin-bottom:30px;
+		}
+		
+		/* Product view:
+		   margin for all grid units */
+		.product-view .grid12-1,
+		.product-view .grid12-2,
+		.product-view .grid12-3,
+		.product-view .grid12-4,
+		.product-view .grid12-5,
+		.product-view .grid12-6,
+		.product-view .grid12-7,
+		.product-view .grid12-8,
+		.product-view .grid12-9,
+		.product-view .grid12-10,
+		.product-view .grid12-11,
+		
+		.product-view .grid4-1,
+		.product-view .grid4-2,
+		.product-view .grid4-3,
+		
+		.product-view .grid2-1
+		{
+			margin-bottom:30px;
+		}
+	
+	/* Magento utility classes
+	-------------------------------------------------------------- */
+	.nobr { white-space:normal !important; }
+    
+    /* Forms
+	-------------------------------------------------------------- */
+	.form-list .field,
+	.form-list input.input-text,
+	.form-list textarea,
+	.form-list select,
+	.form-list li.wide .input-box,
+	.form-list li.wide input.input-text,
+	.form-list li.wide textarea,
+	.form-list li.wide select { max-width:100%; }
+	
+	/* Tables
+	-------------------------------------------------------------- */
+	.data-table thead .nobr { white-space:normal !important; }
+	.data-table th,
+	.data-table td { padding:5px; }
+    
+	/* Data tables formatting
+	-------------------------------------------------------------- */
+    
+    	/* Basic formatting */
+			.cart .data-table thead,
+            .my-wishlist .data-table thead,
+            .my-account .data-table thead,
+            .order-review .data-table thead { display:none; }
+            
+            .cart .data-table tbody,
+            .my-wishlist .data-table tbody,
+            .my-account .data-table tbody,
+            .order-review .data-table tbody { background:transparent !important; }
+            
+            .cart .data-table tr,
+            .cart .data-table td,
+            .my-wishlist .data-table tr,
+            .my-wishlist .data-table td,
+            .my-account .data-table tr,
+            .my-account .data-table td,
+            .order-review .data-table tr,
+            .order-review .data-table td { border:none !important; background:transparent !important; display:block; width:100%; text-align:left !important; }
+            
+            .cart .data-table tr,
+            .my-wishlist .data-table tr,
+            .my-account .data-table tr,
+            .order-review .data-table tr { border-bottom:1px solid #e5e5e5 !important; margin-bottom:20px; }
+            
+		/* Highlight first cell in table footer */
+            .my-account .data-table tfoot tr td:first-child,
+            .order-review .data-table tfoot tr td:first-child { font-weight:bold; }
+    
+    	/* Show cell label */
+            .data-table .cell-label {
+                display:inline-block;
+                width:30%;
+                min-width:100px;
+                max-width:140px;
+                margin-right:10px;
+                font-weight:bold;
+            }
+    
+    /* Basic Magento layout elements
+	-------------------------------------------------------------- */
+	.breadcrumbs { margin-top:0; margin-bottom:10px; }
+	
+	/* Header
+	-------------------------------------------------------------- */	
+		/* Vertical positioning of header elements */
+		.v { display:block; }
+		.v .v-item { float:inherit; display:block; width:auto; }
+		
+		/* Logo */
+		.header .logo-wrapper { text-align:center; }
+		.header .logo { width:70%; margin-left:auto; margin-right:auto; }
+		
+		/* Quick search */
+		.header-top-search-wrapper { width:100%; max-width:301px; margin-left:auto; margin-right:auto; }
+		.header .form-search { width:100%; }
+		.header .form-search .input-text { width:97%; padding-left:10px ; }
+		
+		/* User menu (Top Links) */
+		.user-menu { width:100%; margin-left:0; margin-right:0; }
+		
+		/* Mini cart */
+		.after-mini-cart { clear:none; }
+		
+		/* Top links */
+		.top-links { float:left; }
+		/* Simplify links */
+		.footer .show-separators .links li a,
+		.footer .show-separators-left .links li a { background-image:none; }
+
+		/* Footer horizontal links - align center */
+		
+		.footer-top .item { float:none; }
+		.footer-primary-top-inner,
+		.footer-primary-bottom-inner,
+		.footer-top .links { text-align:center; }
+		.footer-primary-top-inner .item,
+		.footer-primary-bottom-inner .item,
+		.footer-top .links li { float:none; display:inline-block; }
+		
+		/* Social links */
+		.social-links a { float:none; display:inline-block; margin-right:0; margin-bottom:3px; padding:6px; }
+        
+		/* Footer bottom elements - align center */
+		.footer-bottom { text-align:center; }
+		.footer-bottom .item { float:none; display:inline-block; margin-left:5px; margin-right:5px; }
+        
+        /* Copyright - remove space */
+        .footer-copyright { margin-left:0;  }
+
+	/* Products list
+	-------------------------------------------------------------- */
+	.products-list .product-shop-inner { padding-right:0; border-right:none; }
+    
+    /* Products grid
+	-------------------------------------------------------------- */
+    .products-grid .add-to-links.addto-onimage { display:none; }
+    
+    /* Layered navigation
+	-------------------------------------------------------------- */
+    .block-layered-nav dd li,
+    .block-layered-nav .currently ol li { line-height:2.3333em; background-position:3px 10px; }
+    .block-layered-nav dd li:hover,
+    .block-layered-nav .currently ol li:hover { background-position:6px 10px; }
+	
+	/* Toolbar
+	-------------------------------------------------------------- */
+	
+		/* All elements - align center and increase vertical spacing */
+		.pager,
+		.sorter { text-align:center; }
+		.pager .amount,
+		.pager .limiter,
+		.pager .pages,
+		.sorter .amount,
+		.sorter .limiter,
+		.sorter .view-mode,
+		.sorter .sort-by { display:inline-block; float:none; padding-top:10px; padding-bottom:10px; }
+		
+		.toolbar .sort-by,
+		.toolbar sorter .amount { border-right:none; }
+
+	/* Product page
+	-------------------------------------------------------------- */
+	
+		/* Secondary column */
+		.product-secondary-column .inner { padding-left:0; border-left:none; min-height:auto; }
+		
+    	/* Wrapper for collaterals - remove top margin (grid units already have bottom margin) */
+    	.product-view .box-additional { margin-top:0; }
+        
+		/* Sidebar */
+		.product-view .box-sidebar .box-sidebar-inner { padding-left:0; border-left:none; }
+		
+		/* Related: remove bottom margin */
+		.block-related-slider { margin-bottom:0; }
+	
+	/* Cart
+	-------------------------------------------------------------- */
+    
+    /* Buttons below table: align center */
+    	.cart-table tfoot tr.first td { text-align:center !important; padding:0; margin-bottom:20px; }
+    	.cart-table tfoot button { display:inline-block; float:none !important; margin:0 0 3px; padding:0; }
+    
+	/* One Page Checkout
+	-------------------------------------------------------------- */
+    	
+		/* Step title - link "edit" */
+        .opc .allow .step-title a { display:none; }
+    
+		/* Form */
+		.opc form fieldset { display:table-column-group; }
+		.opc .form-list select { width:auto; }
+
+	/* Account
+    -------------------------------------------------------------- */
+    .my-wishlist .product-image { max-width:none;  }
+	
+	/* Items slider
+	-------------------------------------------------------------- */
+	.control-nav.control-paging { display:none; }
+	       
+    /* Slideshow navigation: move buttons to the top right corner */
+        .the-slideshow .direction-nav .next { top:4%; right:2%; }
+        .the-slideshow .direction-nav .prev { top:4%; right:63px; left:auto; }
+    
+    /* Slideshow caption */
+    	/* Shrink all and hide paragraph and button */
+        .caption .heading { font-size:2.0833em; margin-bottom:1px; }
+        .caption p { font-size:1.1666em; display:none; }        
+        .caption button { margin-top:0.5em; display:none; }
+    
+    /* Cloud Zoom
+	-------------------------------------------------------------- */
+    /* Hide zoom */
+    .cloud-zoom-big,
+    .cloud-zoom-lens { display:none !important; }
+    .cloud-zoom-lens { cursor:default !important; }
+	
+	/* Lightbox
+	-------------------------------------------------------------- */
+	#cboxTitle,
+	#cboxCurrent { display:none !important; }
+    
+	/* Accordion
+	-------------------------------------------------------------- */
+    .accordion li a { padding:15px; }
+    /* Space for openner if item has children. It has to be a few pixels wider than openner */
+    .accordion li.parent > a { padding-right:53px; }
+    .accordion .opener { width:48px; height:48px; }
+    
+	/* Items grid: in category view
+	-------------------------------------------------------------- */
+    /* Revert default sizes */
+    .category-products-grid.itemgrid .product-name
+    {
+        font-size:1.3333em; /*16px*/
+        line-height:1.25em; /*20px*/
+    }
+    
+    /* Hide/show elements: 6 & 7 columns */
+	.category-products-grid.itemgrid-6cols .item .btn-cart,
+	.category-products-grid.itemgrid-7cols .item .btn-cart { display:block; }
+}
+/* end: width < 768px */
+
+
+/* Mobile (Landscape) - design for a width of 480px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+
+/* 480px <= width < 768px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	/* Item grid: number of columns
+	-------------------------------------------------------------- */
+	/* Always show 2 columns */
+	.itemgrid-2cols .item,
+	.itemgrid-3cols .item,
+	.itemgrid-4cols .item,
+	.itemgrid-5cols .item,
+	.itemgrid-6cols .item,
+	.itemgrid-7cols .item { width:40%; clear:none !important; }
+	.itemgrid-2cols .list-item1 .actions button{margin-bottom: 0px !important;}
+	.products-grid .btn-cart{margin-left: 141px; margin-right: -4px !important;}
+	.itemgrid-2cols .list-item1 .actions button >span { 
+	background:url("../../images/jewelry/bg_addcart.jpg") no-repeat scroll center center transparent;  
+	height:39px; width:41px; cursor: pointer;}	
+	.lgd > ul >li{padding-bottom: 0px !important; height: 100% !important;}
+	.header .logo{margin:0px !important;}
+	.sticker.sale, .sticker.new{display: none;}
+	.std .products-grid1 li, .lfp li{margin-left:96px !important;}
+	/* Clear every first item in each row (group of n items) */
+	.itemgrid-2cols .item:nth-child(2n+1),
+	.itemgrid-3cols .item:nth-child(2n+1),
+	.itemgrid-4cols .item:nth-child(2n+1),
+	.itemgrid-5cols .item:nth-child(2n+1),
+	.itemgrid-6cols .item:nth-child(2n+1),
+	.itemgrid-7cols .item:nth-child(2n+1) { clear:left !important; }
+	.currency-switcher ul{left:4px !important; width:171% !important;}
+	.lang-switcher ul{left: 5px !important;}
+	.itemslider-horizontal .slides > li{border:1px solid #e4e4e5; padding:0 20px;}
+	/* xxx
+	-------------------------------------------------------------- */
+	.itemslider-x.count-2,	
+	.itemslider-x.count-4,
+	.itemslider-x.count-5,
+	.itemslider-x.count-6,
+	.itemslider-x.count-7,
+	.itemslider-x.count-8,
+	.itemslider-x.count-multi { max-width:254px; } /*2*/
+	.testimonials_sidebar, .block.block-vertnav, .account-login .new-users, .account-login .registered-users{width:100% !important;}
+	.testimonial_image img{width:84% !important;}
+	.b-index{width:100% !important; margin-right:0!important;}
+	.header .form-search .input-text{padding-left:10px!important; width:98% !important;}
+	.itemslider .products-grid .price-box, .itemslider .products-grid .product-name{text-align: center;}
+	.itemslider .products-grid .price-box .old-price{float: none!important;}
+	.itemslider .products-grid .price-box .price{margin-left:0px !important;}
+	.section-title, .nav-container, .std .subtitle {background: none !important;}
+	.ratings .amount{display: none !important;}
+	.itemslider .products-grid .ratings{margin-left: 67px !important;}
+	 .std .subtitle{margin-bottom:0px !important; margin-top:0px !important;}
+	.the-slideshow-wrapper.nested-container{display:none;}
+	.section-title, .subtitle{font-size: 20px !important;}
+#camera_wrap_1{display: none!important;}
+.itemslider-x.count-3{max-width:446px;}
+#mini-cart{margin-top:-40px;}
+.links li a, #mini-cart .block-title, .header .block-compare .block-title{margin-left:5px !important;}
+.v .v-item{width: auto;}
+.lfp li:last-child, .banner-top-page,
+.sorter .view-mode .list,
+.preface ul.links, .l-postscript, .r-postscript{display: none;}
+.gen-tabs-style1.accor .tabs-panels{border-top:1px solid #e1e1e1;}
+.in-col1 .itemslider-x .slides > li .img-promotion{background:url("../../images/jewelry/bg_product_0321.jpg") no-repeat; margin: 0px -13px;}	
+	/*accordion*/
+	.accordion {
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+.cms-index-index #nav #nav-home-link > a, #nav > li.active > a, .vertnav-top li.current > a{border-style: none !important; }
+.accordion ul {
+	float:left;
+	display:block;
+	width:100%;
+	padding:0;
+	margin:0;
+}
+.footer-top .item.float-left {display: none;}
+.accordion li:hover, .accordion li.active{background: none !important;}
+.accordion li {
+	float:left !important;
+	display:block !important;
+	width:100% !important;
+	height:100% !important;
+	padding:0 !important;
+	margin:0 !important;
+	list-style-type:none;
+	cursor:pointer !important;
+	position:relative !important;
+	background: none !important;
+}.accordion li a > span{line-height: 16px;}
+.accordion li a {
+	padding:5px 10px !important;
+	display:block !important;
+	cursor:pointer;
+	text-transform: none !important;	
+}
+.accordion li li a { padding-left:23px !important; }
+.accordion li li li a { padding-left:38px !important; }
+.accordion li li li li a { padding-left:50px !important; }
+.accordion li.parent > a { padding-right:33px !important; }
+.accordion .opener {
+	position:absolute !important;
+	right:0 !important;
+	top:0 !important;
+	display:block !important;
+	width:28px !important;
+	height:28px !important;
+	background: url(../../images/img/opener-small.png) center center no-repeat !important;
+
+}
+.vertnav-top li a{height:21px !important;}
+.accordion li.active > .opener {
+	background: url(../../images/img/opener-small-active.png) center center no-repeat !important;
+}
+#nav > li:hover > a, .vertnav-top li > a:hover{background: transparent !important; border-style:none !important; }
+/*end accordion*/
+
+	/* Broaden the slider if at least 4 thumbnails */
+	.itemslider-thumbnails.count-4,
+	.itemslider-thumbnails.count-5,
+	.itemslider-thumbnails.count-multi { max-width:316px; } /*4*/
+	
+	/* Direction navigation */
+	.itemslider-thumbnails.count-4 .direction-nav { display:none; }
+	.vertnav-top li a{line-height: 0px !important;}
+	#nav > li:hover > a, .vertnav-top li > a:hover{border-style: none !important;}
+	/* Shrink and align center the main image */
+	.product-view .product-img-box .product-image { width:60.4651%; /*364px*/ max-width:364px; margin:0 auto; }	
+
+}
+
+
+/* Additional break-point:
+   Mobile (Landscape, iPhone 4 Portrait) - design for a width of 640px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+/* 640px <= width < 768px */
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+	
+	/* xxx
+	-------------------------------------------------------------- */
+	.itemslider-x.count-3,
+	.itemslider-x.count-4,
+	.itemslider-x.count-5,
+	.itemslider-x.count-6,
+	.itemslider-x.count-7,
+	.itemslider-x.count-8,
+	.itemslider-x.count-multi { max-width:564px; }
+}
+
+
+/* All small mobile - design for a width of less than 480px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+
+/* width < 480px */
+@media only screen and (max-width: 479px) {
+	
+	/* Grid elements
+	-------------------------------------------------------------- */
+	.col2-set .col-1,
+	.col2-set .col-2 { width:100%; }
+		
+		/* Simplify links */
+		.user-menu .show-separators .links li a,
+		.user-menu .show-separators-left .links li a { background-image:none; }
+		
+		/* Header elements - align center */
+		.header-top { text-align:center; }
+		.header-top .item { float:none; display:inline-block; margin-left:5px; margin-right:5px; }
+		
+			/* Links */
+			.user-menu { text-align:center; }
+			.user-menu .top-links { float:none; }
+			#mini-cart,
+			.user-menu .links,
+			.user-menu .links li { float:none; display:inline-block; }
+		
+        /* Mini cart - adjust width and align center, hide drop-down box */
+        #mini-cart .block-content { display:none !important; }
+		.currency-switcher ul{left:4px !important; width:171%;}
+	 
+    .products-list .product-image { margin-bottom:20px; }
+	
+	/* Product page
+	-------------------------------------------------------------- */
+	
+		/* Reviews */
+		.product-view .box-reviews .form-add .data-table th,
+		.product-view .box-reviews .form-add .data-table td { padding:6px 1px; }
+		.product-view .box-reviews .form-add .form-list input.input-text,
+		.product-view .box-reviews .form-add .form-list textarea { width:90%; }
+	
+	/* Toolbar
+	-------------------------------------------------------------- */	
+		.toolbar .limiter { display:none; }		
+		/* Pages */
+		.pager .pages li { display:none; }
+		.pager .pages li.previous,
+		.pager .pages li.current,
+		.pager .pages li.next { display:block; }
+	
+    
+    /* Account
+    -------------------------------------------------------------- */
+            
+            .my-account .col2-set .col-1 { border-right:none; margin-bottom:20px; }
+            .my-account .col2-set .col-1 .box { padding-right:0; }
+        
+		/* Order details */
+			.order-items .sub-title .separator { display:none; }
+	
+	/* Slideshow
+	-------------------------------------------------------------- */
+	.the-slideshow .control-nav { display:none; }
+    
+    /* Slideshow caption */
+    .caption .heading { font-size:1.3333em; display:none; }
+        .caption p { font-size:1em; }
+    
+    /* Cloud zoom
+	-------------------------------------------------------------- */
+	#zoom-btn { display:none; }
+	
+}
+
+
+/* Mobile (Portrait) - design for a width of 320px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+
+/* 320px <= width < 480px */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+	
+	/* Item grid: number of columns
+	-------------------------------------------------------------- */
+	/* Always show 2 columns */
+	.itemgrid-2cols .item,
+	.itemgrid-3cols .item,
+	.itemgrid-4cols .item,
+	.itemgrid-5cols .item,
+	.itemgrid-6cols .item,
+	.itemgrid-7cols .item { width:93%; clear:none !important; }
+	.itemgrid-2cols .list-item1 .actions button{margin-bottom: 0px !important;}
+	.products-grid .btn-cart{margin-left: 246px; }
+	.account-login .new-users, .account-login .registered-users{width:100%!important;}
+	.itemgrid-2cols .list-item1 .actions button >span { 
+	background:url("../../images/jewelry/bg_addcart.jpg") no-repeat scroll center center transparent;  
+	height:39px; width:41px; cursor: pointer;}	
+	.lgd > ul >li{padding-bottom: 0px !important; height: 100% !important;}
+	.lfp li{margin-left:-25px !important;margin-bottom:10px !important;}
+	/* xxx
+	-------------------------------------------------------------- */
+	#camera_wrap_1{display: none!important;}
+	.b-index h6{margin-bottom:10px!important;}
+	.b-index{width:100% !important;margin-top: 25px!important;}
+	.b-index iframe{width: 301px !important;}
+	.sticker.sale, .sticker.new{display: none;}
+	.dropdown-button.item-right ul{left:5px;}
+	.currency-switcher ul{width: 171% !important;}
+	/* Shrink the slider if to many thumbnails */
+	.itemslider-thumbnails.count-3,
+	.itemslider-thumbnails.count-4,
+	.itemslider-thumbnails.count-5,
+	.itemslider-thumbnails.count-multi { max-width:158px; } /*2*/	
+	/* Direction navigation */
+	.itemslider-thumbnails.count-3 .direction-nav,
+	.itemslider-thumbnails.count-4 .direction-nav,
+	.itemslider-thumbnails.count-5 .direction-nav,
+	.itemslider-thumbnails.count-multi .direction-nav { display:block; }	
+	.header .logo{margin:0px;}
+	.footer-top .item.float-left, #subscribe-form label,
+	.preface ul.links, .the-slideshow-wrapper, .banner-top-page, #banner-index,
+	.l-postscript, .r-postscript{display: none;}
+	.gen-tabs-style1.accor .tabs-panels{border-top:1px solid #e1e1e1;}
+	.cart .page-title h1, button.btn-continue{font-size:1.2em;}
+	.main h3.section-title, .std .subtitle{margin: 19px 0 10px 0 !important; font-size: 20px !important;}
+	.std .products-grid1 li, .lfp li{margin-left:23px !important;}
+	.itemslider .products-grid .price-box, .itemslider .products-grid .product-name{text-align: center;}
+	.itemslider .products-grid .price-box .old-price{float: none!important;}
+	.itemslider .products-grid .price-box .price{margin-left:0px !important;}
+	.ratings .amount{display: none !important;}
+	.itemslider .products-grid .ratings{margin-left: 95px !important;}
+	
+	/*accordion*/
+	.accordion {
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+.accordion ul {
+	float:left;
+	display:block;
+	width:100%;
+	padding:0;
+	margin:0;
+}
+.accordion li {
+	float:left !important;
+	display:block !important;
+	width:100% !important;
+	height:100% !important;
+	padding:0 !important;
+	margin:0 !important;
+	list-style-type:none;
+	cursor:pointer !important;
+	position:relative !important;
+}
+.accordion li a {
+	padding:5px 10px !important;
+	display:block !important;
+	cursor:pointer;
+	text-transform: none !important;	
+}
+.header-top-search-wrapper{margin:0px;}
+.accordion li li a { padding-left:23px !important; }
+.accordion li li li a { padding-left:38px !important; }
+.accordion li li li li a { padding-left:50px !important; }
+.accordion li.parent > a { padding-right:33px !important; }
+.accordion .opener {
+	position:absolute !important;
+	right:0 !important;
+	top:0 !important;
+	display:block !important;
+	width:28px !important;
+	height:28px !important;
+	background: url(../../images/img/opener-small.png) center center no-repeat !important;
+
+}
+.accordion li:hover, .accordion li.active, .accordion li{background:none;}
+.accordion li.active > .opener {
+	background: url(../../images/img/opener-small-active.png) center center no-repeat !important;
+}
+#nav > li:hover > a, .vertnav-top li > a:hover{background: transparent !important; border-style:none !important; }
+/*end accordion*/
+
+}
+
+
+/* Mobile (Portrait) - design for a width of 240px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+
+/* width < 320px */
+@media only screen and (max-width: 319px) {
+	
+	/* Item grid: number of columns
+	-------------------------------------------------------------- */
+	/* Always show 1 columns */
+	.itemgrid-2cols .item,
+	.itemgrid-3cols .item,
+	.itemgrid-4cols .item,
+	.itemgrid-5cols .item,
+	.itemgrid-6cols .item,
+	.itemgrid-7cols .item { width:98%; clear:none !important; }
+	
+	/* xxx
+	-------------------------------------------------------------- */
+	.itemslider-x.count-1,
+	.itemslider-x.count-2,
+	.itemslider-x.count-3,
+	.itemslider-x.count-4,
+	.itemslider-x.count-5,
+	.itemslider-x.count-6,
+	.itemslider-x.count-7,
+	.itemslider-x.count-8,
+	.itemslider-x.count-multi { max-width:188px; } /*1*/
+	
+	/* Cloud zoom
+	-------------------------------------------------------------- */
+	/* Shrink the slider if to many thumbnails */
+	.itemslider-thumbnails.count-2,
+	.itemslider-thumbnails.count-3,
+	.itemslider-thumbnails.count-4,
+	.itemslider-thumbnails.count-5,
+	.itemslider-thumbnails.count-multi { max-width:79px !important; } /*1*/
+	
+	/* Direction navigation */
+	.itemslider-thumbnails.count-2 .direction-nav,
+	.itemslider-thumbnails.count-3 .direction-nav,
+	.itemslider-thumbnails.count-4 .direction-nav,
+	.itemslider-thumbnails.count-5 .direction-nav,
+	.itemslider-thumbnails.count-multi .direction-nav { display:block; }
+    
+    /* Slideshow
+	-------------------------------------------------------------- */
+    .the-slideshow .direction-nav { display:none; }
+
+}
